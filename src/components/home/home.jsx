@@ -182,7 +182,25 @@ export default function Home() {
           </div>
           <p>Farmatodo_Mexico</p>
           <a href="https://www.farmatodo.com.mx/aviso-de-privacidad">Aviso de privacidad</a>
-          <img src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Footer.png" alt="Patrocinadores grandes" className="footer-sponsors" />
+          {/* Carrusel de patrocinadores */}
+          <div className="footer-sponsors-carousel">
+            <div className="sponsors-track">
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={i}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={`dup-${i}`}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+            </div>
+          </div>
         </motion.footer>
 
       </motion.main>
