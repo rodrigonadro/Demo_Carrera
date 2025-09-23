@@ -64,7 +64,33 @@
   font-size: 1.4rem;
   color: #fff;
 }
+.newcontainer
+{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  grid-template-rows: 1fr 1fr;    /* dos filas */
+  gap:2rem;
+  
+}
+.newcontainerHijo1
+{
+  background: #1B3E76;
+  padding: 1.5rem;
+  border-radius: 10px;
 
+
+}
+.newcontainerHijo
+{
+ grid-column: 1 / span 2; 
+  background: #1B3E76;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+   
+ 
+}
 .convocatoria-sections-container {
   display: flex;
   gap: 2rem;

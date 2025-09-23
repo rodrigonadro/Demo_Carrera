@@ -228,9 +228,9 @@ export default function Convocatoria() {
                 <b><a href="https://n9.cl/9h2su" target="_blank"><p className="title">Ubicación aquí</p></a></b>
               </div>
             </div>
-           
+           <div class="newcontainer">
             {/* Premios 5k */}            
-            <div className="info-card">
+            <div className="newcontainerHijo1">
               <div className="info-content">
                 <p className="highlight-5km">
                   Distancia 5 km.<br />
@@ -260,7 +260,7 @@ export default function Convocatoria() {
             </div>
 
             {/* Premios 10k */}
-            <div className="info-card">
+            <div className="newcontainerHijo1">
               <div className="info-content">
                 <p className="highlight-5km">
                   Distancia 10 km.<br />
@@ -288,26 +288,28 @@ export default function Convocatoria() {
               </div>
               
             </div>
-          </div>
-          {/* NOTAS IMPORTANTES */}
-      <div className="footer-card">
-        <p className="highlight-5km">
+            <div className="newcontainerHijo">
+              <p className="highlight-5km">
                   Notas importantes:                 
         </p>
         <p>
           Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar: 
           Correo de confirmación de inscripción, ticket o cédula expedido en el centro de inscripción.
         </p>
-        <ul>
-          <li>Distancia 3 km es recreativa, no aplica premiación.</li>
-          <li>No habrá duplicidad de premios.</li>
-          <li>El pago de premiación será con cheque no aplica impuesto.</li>
-          <li>La vigencia para recoger tu premio es 15 días hábiles después del evento.</li>
-          <li>Es obligatorio presentar identificación Oficial en ORIGINAL, para reclamo de premiación.</li>
-          <li>Para efectos de premiación se considera el tiempo oficial.</li>
-          <li>Durante la ceremonia de premiación los ganadores deberán vestir la playera oficial del evento.</li>
-        </ul>
-      </div>
+              <ul>
+                <li>Distancia 3 km es recreativa, no aplica premiación.</li>
+                <li>No habrá duplicidad de premios.</li>
+                <li>El pago de premiación será con cheque no aplica impuesto.</li>
+                <li>La vigencia para recoger tu premio es 15 días hábiles después del evento.</li>
+                <li>Es obligatorio presentar identificación Oficial en ORIGINAL, para reclamo de premiación.</li>
+                <li>Para efectos de premiación se considera el tiempo oficial.</li>
+                <li>Durante la ceremonia de premiación los ganadores deberán vestir la playera oficial del evento.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          {/* NOTAS IMPORTANTES */}
+ 
         </div>
       </div>)}
 
