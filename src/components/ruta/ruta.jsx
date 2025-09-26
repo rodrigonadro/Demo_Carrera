@@ -86,17 +86,24 @@ Salida y meta: Parque Bicentenario / Explanada Ladrillo
         Inscribirme
       </a>
 
-      {!isMobile && (<div className="footer-sponsors-container">
-        <img
-          src="https://gruporfpqa.vteximg.com.br/arquivos/Patrocinadores_landing.png"
-          alt="Patrocinadores"
-          className="footer-sponsors"
-        />
-      </div>)}
-
-      {isMobile && (<div className="footer">
-        <a href="https://www.farmatodo.com.mx/aviso-de-privacidad">Aviso de privacidad</a>
-      </div>)}
+      {!isMobile && (<div className="footer-sponsors-carousel">
+            <div className="sponsors-track">
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={i}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={`dup-${i}`}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+            </div>
+          </div>)}
     </div>
   );
 }

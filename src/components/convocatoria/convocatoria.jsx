@@ -23,31 +23,43 @@ export default function Convocatoria() {
       content: (
         <div className="info-card">
           <div className="info-content">
-            <p className="highlight">
-              Fecha: 09 de noviembre de 2025.<br />
-              Hora de salida: 07:00 am.
-            </p>
-            <p className="title">Inscripciones:</p>
-            <p>
-              Del 22 de Septiembre al 6 de Noviembre.
-            </p>
-            <p className="title">Distancia:</p>
-            <ul>
-              <li>Distancia 3 km. Recreativa 
-                <b>Categoría única general</b></li>
-              <li>5 km. Categoría única general</li>
-              <li>10 km.</li>
-                <li>Categoría Juvenil (14 a 18 años)</li>
-                <li>Categoría Libre (19 a 39 años)</li>
-                <li>Categoría Máster (40 a 49 años)</li>
-                <li>Categoría Veterano (50 años en adelante)</li>
-                <li>Categoría Capacidades Diferentes</li>
-              </ul>
-            <p className="title">Entrega de kits</p>
-            <p>
-              4 de Octubre, de 10:00 a 17:00 hrs.<br />
-              En la explanada del parque Centenario de Beisbol.
-            </p>
+              <p className="highlight-desk">
+                Fecha: 09 de noviembre de 2025.<br />
+                Hora de salida: 07:00 am.
+              </p>
+              <p className="title">Inscripciones:</p>
+              <p>
+                Del 22 de septiembre al 6 de noviembre
+              </p>
+              <p className="title">Salida:</p>
+              <p>
+                Parque Bicentenario
+              </p>
+              <p className="title">Distancia:</p>
+                <ul>
+                  <li>Distancia 3 km. Recreativa </li><b>Categoría única general</b>
+                  <br></br>
+                  <br /><li>Distancia 5 km. </li><b>Categoría única general</b>
+                  <br></br><br /><li>Distancia 10 km. </li>
+                  <b>Categorías</b>
+                    <ul>                    
+                    <b><li>Categoría Libre &nbsp; &nbsp; &nbsp; 15 a 30 años</li>
+                    <li>Categoría Máster  &nbsp; &nbsp; &nbsp;   31 a 50 años</li>
+                    <li>Categoría Veterano  &nbsp; &nbsp; &nbsp;   51 a 99 años</li>
+                    <li>Capacidades Diferentes* &nbsp;15 a 99 años</li></b>
+                    </ul>
+                </ul>
+                
+              <p className="title">*Aplican restricciones con fundamento médico</p>
+              <br></br><br />
+              <p className="title">Entrega de kit</p>
+              <p>
+                08 de noviembre de 2025<br />
+                Horario 09:00 a 15:00 horas<br />
+                Parque Bicentenario Jardín Natura<br />
+              </p>
+                <br></br><br /> 
+                <b><a href="https://n9.cl/9h2su" target="_blank"><p className="title">Ubicación aquí</p></a></b>
           </div>
         </div>
       )
@@ -60,23 +72,28 @@ export default function Convocatoria() {
           <div className="info-content">
             <p className="highlight-5km">
               Distancia 5 km.<br />
+              
             </p>
-            <p className="sub-highlight-5km">
-              5 primeros lugares absolutos femenil y varonil.
-            </p>
-            <div className="premios5k-grid">
-              <div className="premio-box categoria">General</div>
-              <div className="premio-box edad">14 años<br />en adelante</div>
-              <div className="bonus-box-mob">
-                <div className="bonus-title">Bono 1er. Tabasqueño</div>
-                <div className="bonus-amount">$2,500.00</div>
+            3 primeros lugares absolutos femenil y varonil.
+            <br></br><br />
+            <div className="premios-grid">
+              <div className="premio-col">5km
+              <div className="premio-col"><span className="circle">1er</span></div>
+                <div className="premio-col"><span className="circle">2do</span></div>
+                <div className="premio-col"><span className="circle">3er</span></div>
+                </div>
+              <div className="premio-col premios-list">Femenil
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$3,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$2,000.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
               </div>
-              <div className="premio-box premio-item"><span className="circle">1er</span>$4,500.00</div>
-              <div className="premio-box premio-item"><span className="circle">2do</span>$2,500.00</div>
-              <div className="premio-box premio-item"><span className="circle">3er</span>$1,500.00</div>
-              <div className="premio-box premio-item"><span className="circle">4to</span>$1,000.00</div>
-              <div className="premio-box premio-item"><span className="circle">5to</span>$500.00</div>
+              <div className="premio-col premios-list">Varonil
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$3,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$2,000.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
+              </div>
             </div>
+            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$1,500.00</span></div>
           </div>
         </div>
       )
@@ -87,36 +104,56 @@ export default function Convocatoria() {
       content: (
         <div className="info-card">
           <div className="info-content">
-            <p className="highlight">
+            <p className="highlight-5km">
               Distancia 10 km.<br />
-              5 primeros lugares de cada categoría, ambas ramas.
+              
             </p>
+            3 primeros lugares de cada categoría, ambas <br />ramas.
             <div className="premios-grid">
-              <div className="premio-col">Juvenil</div>
-              <div className="premio-col">14 a 18 años</div>
-              <div className="premio-col"><span className="circle">1er</span>$6,000</div>
-
-              <div className="premio-col">Libre</div>
-              <div className="premio-col">19 a 39 años</div>
-              <div className="premio-col"><span className="circle">2do</span>$4,000</div>
-
-              <div className="premio-col">Máster</div>
-              <div className="premio-col">40 a 49 años</div>
-              <div className="premio-col"><span className="circle">3er</span>$2,000</div>
-
-              <div className="premio-col">Veterano</div>
-              <div className="premio-col">50 años<br />en adelante</div>
-              <div className="premio-col"><span className="circle">4to</span>$1,500</div>
-
-              <div className="premio-col">Discapacidad<br />Silla de ruedas</div>
-              <div className="premio-col">14 años<br />en adelante</div>
-              <div className="premio-col">$500.00</div>
-
-              <div className="premio-col">Discapacidad<br />Ciegos y débiles<br />visuales</div>
-              <div className="premio-col">14 años<br />en adelante</div>
-              <div className="premio-col">$500.00</div>
+              <div className="premio-col">10km
+              <div className="premio-col"><span className="circle">1er</span></div>
+                <div className="premio-col"><span className="circle">2do</span></div>
+                <div className="premio-col"><span className="circle">3er</span></div>
+                </div>
+              <div className="premio-col premios-list">Femenil
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$4,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$2,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
+              </div>
+              <div className="premio-col premios-list">Varonil
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$4,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$2,500.00</div>
+                <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
+              </div>
             </div>
-            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono 1er. Tabasqueño<span >$3,000.00</span></div>
+            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$2,000.00</span></div>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: "Notas",
+      title: "Premios",
+      content: (
+        <div className="info-card">
+          <div className="info-content">
+            <p className="highlight-5km">
+              Notas importantes:<br />
+              
+            </p>
+           <p>
+              Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar: 
+              Correo de confirmación de inscripción, ticket o cédula expedido en el centro de inscripción.
+            </p>
+                  <ul>
+                    <li>Distancia 3 km es recreativa, no aplica premiación.</li>
+                    <li>No habrá duplicidad de premios.</li>
+                    <li>El pago de premiación será con cheque no aplica impuesto.</li>
+                    <li>La vigencia para recoger tu premio es 15 días hábiles después del evento.</li>
+                    <li>Es obligatorio presentar identificación Oficial en ORIGINAL, para reclamo de premiación.</li>
+                    <li>Para efectos de premiación se considera el tiempo oficial.</li>
+                    <li>Durante la ceremonia de premiación los ganadores deberán vestir la playera oficial del evento.</li>
+                  </ul>
           </div>
         </div>
       )
@@ -313,17 +350,43 @@ export default function Convocatoria() {
         </div>
       </div>)}
 
-      {!isMobile && (<div className="footer-sponsors-container">
-        <img
-          src="https://gruporfpqa.vteximg.com.br/arquivos/Patrocinadores_landing.png"
-          alt="Patrocinadores"
-          className="footer-sponsors"
-        />
-      </div>)}
+      {!isMobile && (<div className="footer-sponsors-carousel">
+            <div className="sponsors-track">
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={i}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={`dup-${i}`}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+            </div>
+          </div>)}
 
-      {isMobile && (<div className="footer">
-        <a href="https://www.farmatodo.com.mx/aviso-de-privacidad">Aviso de privacidad</a>
-      </div>)}
+      {isMobile && (<div className="footer-sponsors-carousel">
+            <div className="sponsors-track">
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={i}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={`dup-${i}`}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+            </div>
+          </div>)}
     </div>
   );
 }

@@ -34,9 +34,9 @@ export default function Home() {
   }, [showMain]);
 
   const raceInfo = {
-    "3Km": { title: "Recreativa Categoría única general", price: "$200.00", url: "https://www.farmatodo.com.mx/caminata-3-km-v2/p" },
-    "5Km": { title: "Categoría única general", price: "$270.00", url: "https://www.farmatodo.com.mx/carrera-5-km-v2/p" },
-    "10Km": { title: "Todas las categorias", price: "$330.00", url: "https://www.farmatodo.com.mx/carrera-10-km-000800051332/p" }
+    "3Km": { title: "Recreativa Categoría única general", price: "$200.00", url: "https://www.farmatodo.com.mx/caminata-3-km-ft/p" },
+    "5Km": { title: "Categoría única general", price: "$270.00", url: "https://www.farmatodo.com.mx/carrera-5-km-ft/p" },
+    "10Km": { title: "Todas las categorias", price: "$330.00", url: "https://www.farmatodo.com.mx/carrera-10-km-ft/p" }
   };
 
   return (
@@ -53,7 +53,7 @@ export default function Home() {
               src={isMobile
                 ? "https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png"
                 : "https://rodrigonadro.github.io/turnfolleto/demos/magazine/logoFT.png"}
-              alt="Farmacia Unión"
+              alt="Farmatodo"
               initial={{ y: -200, opacity: 1 }}
               animate={!startMoveUp
                 ? { y: [-200, 0, -45, 0, -18, 0] }

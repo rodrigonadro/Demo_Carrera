@@ -215,3 +215,44 @@
     width: 232px;
   }
 }
+
+/* Carrusel de patrocinadores */
+.footer-sponsors-carousel {
+  position: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 79%; /* ocupar todo el ancho en móvil */
+  margin-top: .5rem;
+  margin-left: 11rem;
+  padding: .5rem;
+  align-items: center;
+}
+
+.sponsors-track {
+  display: flex;
+  width: calc(200%);
+  animation: scrollSponsors 20s linear infinite;
+}
+
+.sponsors-track img {
+  height: 80px;   /* ajusta el tamaño de los logos */
+  margin: 0 30px;
+  object-fit: contain;
+}
+
+@keyframes scrollSponsors {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .sponsors-track img {
+    height: 50px;   /* más pequeños en celular */
+    margin: 0 15px; /* menos espacio entre logos */
+  }
+
+  .footer-sponsors-carousel {
+    max-width: 100%; /* ocupar todo el ancho en móvil */
+    margin-top: 1rem;
+  }
+  }
