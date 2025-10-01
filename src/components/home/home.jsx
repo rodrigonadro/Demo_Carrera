@@ -86,7 +86,7 @@ export default function Home() {
       >
         {isMobile && (
           <motion.img
-            src="https://gruporfpqa.vteximg.com.br/arquivos/farmaciaU_nav.png"
+            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png"
             initial={{ opacity: 0, y: 8 }}
             animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
             transition={{ duration: 0.6, delay: 0.45 }}
@@ -102,8 +102,8 @@ export default function Home() {
 
         <div className="main-inner">
           {isMobile && (
-            <motion.img
-              src="https://gruporfpqa.vteximg.com.br/arquivos/carrera_mob2.png"
+            <motion.img              
+              src="https://gruporfpqa.vteximg.com.br/arquivos/i_FondoCDMXCMob.png"
               alt="Carrera"
               initial={{ opacity: 0, y: 30 }}
               animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
