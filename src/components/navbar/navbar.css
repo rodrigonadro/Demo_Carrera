@@ -9,7 +9,7 @@
 }
 
 .navbar-mobile {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .navbar-inner {
@@ -81,8 +81,6 @@
   gap: 1rem; /* espacio entre home y los links */
 }
 
-
-
 /* Responsive */
 @media (max-width: 768px) {
   .navbar-inner {
@@ -93,4 +91,8 @@
   .navbar-right {
     justify-content: center;
   }
+
+  .navbar-links-mobile{
+    text-decoration: underline;
+  } 
 }

@@ -1,7 +1,10 @@
 import './home.css'
+import '../navbar/navbar.css'
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from '../navbar/navbar.jsx';
+import SegundaCarrera from '../../assets/Images/i_FondoCDMXMob.png';
+import CorremosTodos  from '../../assets/Images/i_Slogan.png';
 
 export default function Home() {
   const [startMoveUp, setStartMoveUp] = useState(false);
@@ -42,8 +45,10 @@ export default function Home() {
   return (
     <div className="app-container">
 
-      {/* Navbar */}
-      {showNavbar && <Navbar />}
+       <div className="Navbar-principal">
+          {/* Navbar */}
+          {showNavbar && <Navbar/>}              
+        </div>
 
       {/* Intro Animation */}
       {!showMain && (
@@ -92,83 +97,103 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.45 }}
             className="main-logo-mobile-union"
           />)}
-        <motion.img
-          src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Patrocinadores.png"
-          initial={{ opacity: 0, y: 8 }}
-          animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
-          className={`main-powerade ${isMobile ? "main-powerade--mobile" : "main-powerade--desktop"}`}
-        />
-
-        <div className="main-inner">
-          {isMobile && (
-            <motion.img              
-              src="https://gruporfpqa.vteximg.com.br/arquivos/i_FondoCDMXCMob.png"
-              alt="Carrera"
-              initial={{ opacity: 0, y: 30 }}
-              animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="main-logo_mobile-union"
-            />)}
-          {!isMobile && (
-            <motion.img
-              src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_FondoCDMXC.png"
-              alt="Carrera"
-              initial={{ opacity: 0, y: 30 }}
-              animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="main-logo"
-            />)}
-
-          <motion.div
+          <motion.img
+            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Patrocinadores.png"
             initial={{ opacity: 0, y: 8 }}
             animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="main-text"
-          >
-            
-            <p>
-              El próximo 9 de noviembre llega a la Ciudad de México la 2ª Carrera Farmatodo.<br />
-              Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
-              quienes buscan un nuevo reto.<br />
-              ¡Vive la energía del movimiento y disfruta de salud y diversión!
-            </p>
-            <h3>¡Elige tu distancia!</h3>
-          </motion.div>
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className={`main-powerade ${isMobile ? "main-powerade--mobile" : "main-powerade--desktop"}`}
+          />
 
-          {/* Botones de distancia */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="race-section"
-          >
-            {!selectedDistance ? (
-              <div className="race-buttons">
-                {["3Km", "5Km", "10Km"].map(d => (
-                  <button key={d} className="race-button" onClick={() => setSelectedDistance(d)}>
-                    {d}
+          <div className="main-inner">
+            {isMobile && (
+              <motion.img              
+                src={SegundaCarrera}
+                alt="Carrera"
+                initial={{ opacity: 0, y: 30 }}
+                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="main-logo_mobile-union"
+              />)}
+            {!isMobile && (
+              <motion.img
+                src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_FondoCDMXC.png"
+                alt="Carrera"
+                initial={{ opacity: 0, y: 30 }}
+                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="main-logo"
+              />)}
+
+            <div className="nuevoDiv">
+              <div className="Navbar2">
+                {/* Navbar */}
+                {showNavbar && <Navbar/>}              
+              </div>
+                
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="main-text"
+              >
+                {isMobile && (
+                  <motion.img              
+                    src={CorremosTodos}
+                    alt="Corremos Todos"               
+                    className="corremos_todos_mobile"
+                  />)}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="main-text"
+              >
+                <p>
+                  El próximo 9 de noviembre llega a la Ciudad de México la 2ª Carrera Farmatodo.<br />
+                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
+                  quienes buscan un nuevo reto.<br />
+                  ¡Vive la energía del movimiento y disfruta de salud y diversión!
+                </p>
+                <h3>¡Elige tu distancia!</h3>
+              </motion.div>
+            </div>
+
+            {/* Botones de distancia */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="race-section"
+            >
+              {!selectedDistance ? (
+                <div className="race-buttons">
+                  {["3Km", "5Km", "10Km"].map(d => (
+                    <button key={d} className="race-button" onClick={() => setSelectedDistance(d)}>
+                      {d}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div className="race-info">
+                  <button className="race-info__back" onClick={() => setSelectedDistance(null)} title="Regresar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                      strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M3 7v6h6"></path>
+                      <path d="M21 17a8 8 0 0 0-8-8H3"></path>
+                    </svg>
                   </button>
-                ))}
-              </div>
-            ) : (
-              <div className="race-info">
-                <button className="race-info__back" onClick={() => setSelectedDistance(null)} title="Regresar">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-                    strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M3 7v6h6"></path>
-                    <path d="M21 17a8 8 0 0 0-8-8H3"></path>
-                  </svg>
-                </button>
-                <p className="race-info__title">{raceInfo[selectedDistance].title}</p>
-                <p className="race-info__price"><strong>Precio: {raceInfo[selectedDistance].price}</strong></p>
-                <a className="race-info__cta" href={raceInfo[selectedDistance].url} target="_blank" rel="noreferrer">
-                  Quiero correr esta carrera
-                </a>
-              </div>
-            )}
-          </motion.div>
-        </div>
+                  <p className="race-info__title">{raceInfo[selectedDistance].title}</p>
+                  <p className="race-info__price"><strong>Precio: {raceInfo[selectedDistance].price}</strong></p>
+                  <a className="race-info__cta" href={raceInfo[selectedDistance].url} target="_blank" rel="noreferrer">
+                    Quiero correr esta carrera
+                  </a>
+                </div>
+              )}
+            </motion.div>
+          </div>
 
         {/* Footer */}
         <motion.footer className="footer" initial={{ opacity: 0, y: 10 }} animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }} transition={{ duration: 0.7, delay: 1 }}>

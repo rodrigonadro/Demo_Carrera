@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Links de navegación */}
         <div className={`navbar-right ${isMobile ? "navbar-right-mobile" : ""}`}>
           {/* El icono de home SIEMPRE visible */}
-          <a href="/" className="home-link">
+          <a href="/" className="home-link mobile">
             <img
               src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
               alt="home"
@@ -46,7 +46,7 @@ export default function Navbar() {
           </a>
 
           {/* Links visibles siempre */}
-          <nav className="nav-menu">
+          <nav className={`nav-menu ${isMobile ? "navbar-links-mobile" : ""}`}>
             <a href="/convocatoria">Convocatoria</a>
             <a href="/ruta">Nuestras rutas</a>
           </nav>
