@@ -9,7 +9,7 @@
 }
 
 .navbar-mobile {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .navbar-inner {
@@ -93,4 +93,8 @@
   .navbar-right {
     justify-content: center;
   }
+
+  .navbar-links-mobile{
+    text-decoration: underline;
+  } 
 }

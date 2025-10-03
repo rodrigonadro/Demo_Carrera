@@ -294,6 +294,14 @@ body.intro-active {
   object-fit: contain;
 }
 
+.Navbar2{
+  display: none;
+}
+
+.Navbar-principal{
+    display: block;
+  }
+
 @keyframes scrollSponsors {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -309,4 +317,134 @@ body.intro-active {
     max-width: 100%; /* ocupar todo el ancho en móvil */
     margin-top: 1rem;
   }
+
+  .Navbar2{
+    display: block;
   }
+
+  .Navbar-principal .navbar-inner{
+    align-items: flex-start;
+    padding-left: 5%;
+  }
+
+  .Navbar-principal .navbar-links-mobile{
+    display: none;
+  }
+
+  .Navbar2 .icon-home{
+    display: none;
+  }
+
+  .corremos_todos_mobile{
+    max-width: 80% !important;
+  }
+
+  .Navbar2 .navbar-right-mobile {
+    justify-content: flex-start;
+  }
+
+  .nuevoDiv{
+    margin-top: -20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-logo--mobile {
+    max-width: 220px;   /* más compacto en celulares chicos */
+    margin-bottom: 1rem;
+  }
+
+  .intro-footer--mobile {
+    margin-top: 3rem;   /* menos espacio que los 8rem actuales */
+    max-width: 180px;
+  }
+
+  .main-logo-mobile-union {
+    max-width: 90%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .main-powerade--mobile {
+    max-width: 140px;
+    margin-top: 0.5rem;
+  }
+
+  .Navbar2{
+    display: block;
+  }
+
+  .Navbar-principal .navbar-inner{
+    align-items: flex-start;
+    padding-left: 5%;
+  }
+
+  .Navbar-principal .navbar-links-mobile{
+    display: none;
+  }
+
+  .Navbar2 .icon-home{
+    display: none;
+  }
+
+  .corremos_todos_mobile{
+    max-width: 80% !important;
+  }
+
+  .Navbar2 .navbar-right-mobile {
+    justify-content: flex-start;
+  }
+
+  .nuevoDiv{
+    margin-top: -20%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Imagen de patrocinadores */
+  .main-powerade--mobile {
+    display: block;
+    margin: 0 auto 2rem auto; /* 👈 espacio debajo (antes de fondo) */
+    max-width: 100px;
+  }
+
+  /* Fondo móvil */
+  .main-logo-mobile-union {
+    display: block;
+    max-width: 170px;   /* ajusta según se vea mejor (ej. 120px–150px) */
+    margin: 1.5rem auto 0 auto; /* 👈 espacio arriba (después de patrocinadores) */
+  }
+
+  .Navbar2{
+    display: block;
+  }
+
+  .Navbar-principal .navbar-inner{
+    align-items: flex-start;
+    padding-left: 5%;
+  }
+
+  .Navbar2 .navbar-link .mobile{
+    display: none;
+  }
+
+  .Navbar-principal .navbar-links-mobile{
+    display: none;
+  }
+
+  .Navbar2 .icon-home{
+    display: none;
+  }
+
+  .corremos_todos_mobile{
+    max-width: 80% !important;
+  }
+
+  .Navbar2 .navbar-right-mobile {
+    justify-content: flex-start;
+  }
+
+  .nuevoDiv{
+    margin-top: -25%;
+  }
+}
