@@ -15,5 +15,5 @@ export default defineConfig({
     // Agregamos todos los hosts que quieres usar
     host: ['localhost', 'vite.farmatodo.com.mx', 'farmatodo.com.mx', 'carreracdmx.farmatodo.com.mx'],
   },
-  base: '/Demo_Carrera/',
+  base: process.env.NODE_ENV === 'production' ? '/Demo_Carrera/' : '/',
 })
