@@ -13,7 +13,8 @@ export default defineConfig({
     },
     port: 5173,
     // Agregamos todos los hosts que quieres usar
-    host: ['localhost', 'vite.farmatodo.com.mx', 'farmatodo.com.mx', 'carreracdmx.farmatodo.com.mx'],
+    host: ['localhost', 'carreracdmx.farmatodo.com.mx'],
   },
-  base: '/Demo_Carrera/',
+   // 👇 base dinámica según entorno
+  base: isProduction ? '/Demo_Carrera/' : '/',
 })
