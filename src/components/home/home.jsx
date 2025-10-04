@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Navbar from '../navbar/navbar.jsx';
 import SegundaCarrera from '../../assets/Images/i_FondoCDMXMob.png';
 import CorremosTodos  from '../../assets/Images/i_Slogan.png';
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const [startMoveUp, setStartMoveUp] = useState(false);
@@ -44,11 +45,46 @@ export default function Home() {
 
   return (
     <div className="app-container">
+      {/* 🧭 SEO & Open Graph Metadata */}
+      <Helmet>
+        <html lang="es" />
+        <title>Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX</title>
+
+        {/* 🔹 Metadatos principales */}
+        <meta
+          name="description"
+          content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario CDMX. Corre 3K, 5K o 10K y disfruta de premios, diversión y salud con toda la familia."
+        />
+        <meta
+          name="keywords"
+          content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2025, Parque Bicentenario, registro Farmatodo, salud y deporte"
+        />
+        <link rel="canonical" href="https://www.farmatodo.com.mx/carrera-farmatodo-2025" />
+
+        {/* 🔹 Open Graph para redes sociales */}
+        <meta property="og:title" content="Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX" />
+        <meta property="og:description" content="Corre por la salud y la diversión. Carrera Farmatodo 2025 en el Parque Bicentenario CDMX. ¡Inscríbete ahora!" />
+        <meta property="og:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
+        <meta property="og:url" content="https://www.farmatodo.com.mx/carrera-farmatodo-2025" />
+        <meta property="og:type" content="website" />
+
+        {/* 🔹 Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX" />
+        <meta name="twitter:description" content="Corre por la salud y la diversión en la Carrera Farmatodo 2025 – Parque Bicentenario CDMX." />
+        <meta name="twitter:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
+
+        <link rel="icon" href="https://gruporfpqa.vteximg.com.br/arquivos/favicon_race.png" />
+        <meta name="theme-color" content="#0d3b82" />
+      </Helmet>
 
        <div className="Navbar-principal">
           {/* Navbar */}
           {showNavbar && <Navbar/>}              
         </div>
+      <h1 className="main-title-seo">
+        Carrera Farmatodo 2025 – Ciudad de México
+      </h1>
 
       {/* Intro Animation */}
       {!showMain && (
