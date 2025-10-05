@@ -10,6 +10,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/ruta" element={<Ruta />} />
       <Route path="/convocatoria" element={<Convocatoria />} />
+      {/* 👇 ruta por defecto en caso de no coincidir (opcional pero recomendado) */}
+      <Route path="*" element={<Home />} />
     </Routes>
   )
 }

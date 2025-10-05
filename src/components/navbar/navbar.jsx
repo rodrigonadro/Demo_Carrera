@@ -1,6 +1,6 @@
-// Navbar.jsx
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"  // 👈 Import necesario para rutas internas
 import './navbar.css'
 
 export default function Navbar() {
@@ -31,24 +31,23 @@ export default function Navbar() {
               className="logo-main"
             />
           )}
-          
         </div>
 
         {/* Links de navegación */}
         <div className={`navbar-right ${isMobile ? "navbar-right-mobile" : ""}`}>
-          {/* El icono de home SIEMPRE visible */}
-          <a href="/" className="home-link mobile">
+          {/* Icono de home siempre visible */}
+          <Link to="/" className="home-link mobile">
             <img
               src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
               alt="home"
               className="icon-home"
             />
-          </a>
+          </Link>
 
-          {/* Links visibles siempre */}
+          {/* Links de navegación interna */}
           <nav className={`nav-menu ${isMobile ? "navbar-links-mobile" : ""}`}>
-            <a href="/convocatoria">Convocatoria</a>
-            <a href="/ruta">Nuestras rutas</a>
+            <Link to="/convocatoria">Convocatoria</Link>
+            <Link to="/ruta">Nuestras rutas</Link>
           </nav>
         </div>
       </div>
