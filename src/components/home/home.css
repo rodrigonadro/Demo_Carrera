@@ -448,15 +448,22 @@ body.intro-active {
     margin-top: -15%;
   }
 }
+/* 🔹 Oculta el H1 con clase .main-title-seo sin afectar el SEO */
 .main-title-seo {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #0d3b82;
-  margin: 1.2rem 0;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
-@media (max-width: 480px) {
+
+/* 🔹 En caso de pantallas móviles, mantenemos el mismo comportamiento */
+@media (max-width: 768px) {
   .main-title-seo {
-    margin-top: 2.5rem;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
   }
 }
