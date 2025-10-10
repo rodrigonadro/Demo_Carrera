@@ -48,30 +48,30 @@ export default function Home() {
       {/* 🧭 SEO & Open Graph Metadata */}
       <Helmet>
         <html lang="es" />
-        <title>Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX</title>
+        <title>Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K</title>
 
         {/* 🔹 Metadatos principales */}
         <meta
           name="description"
-          content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario CDMX. Corre 3K, 5K o 10K y disfruta de premios, diversión y salud con toda la familia."
+          content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo."
         />
         <meta
           name="keywords"
           content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2025, Parque Bicentenario, registro Farmatodo, salud y deporte"
         />
-        <link rel="canonical" href="https://www.farmatodo.com.mx/carrera-farmatodo-2025" />
+        <link rel="canonical" href="https://carreracdmx.farmatodo.com.mx/" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX" />
-        <meta property="og:description" content="Corre por la salud y la diversión. Carrera Farmatodo 2025 en el Parque Bicentenario CDMX. ¡Inscríbete ahora!" />
+        <meta property="og:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
+        <meta property="og:description" content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo. ¡Inscríbete ahora!" />
         <meta property="og:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
-        <meta property="og:url" content="https://www.farmatodo.com.mx/carrera-farmatodo-2025" />
+        <meta property="og:url" content="https://carreracdmx.farmatodo.com.mx/" />
         <meta property="og:type" content="website" />
 
         {/* 🔹 Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Carrera Farmatodo 2025 | 3K, 5K y 10K CDMX" />
-        <meta name="twitter:description" content="Corre por la salud y la diversión en la Carrera Farmatodo 2025 – Parque Bicentenario CDMX." />
+        <meta name="twitter:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
+        <meta name="twitter:description" content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo." />
         <meta name="twitter:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
 
         <link rel="icon" href="https://gruporfpqa.vteximg.com.br/arquivos/favicon_race.png" />
