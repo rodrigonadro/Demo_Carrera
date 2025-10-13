@@ -53,10 +53,12 @@ export default function Ruta() {
             {slides[currentIndex].label}
           </motion.div>
 
-          {currentIndex === 0 ? (
-            <button className="carousel-btn right" onClick={goNext}></button>
-          ) : (
+          {currentIndex > 0 && (
             <button className="carousel-btn left" onClick={goPrev}></button>
+          )}
+
+          {currentIndex < slides.length - 1 && (
+            <button className="carousel-btn right" onClick={goNext}></button>
           )}
         </div>
       )}
