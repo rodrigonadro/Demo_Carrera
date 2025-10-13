@@ -14,8 +14,9 @@ export default function Ruta() {
   }, []);
 
   const slides = [
-    { src: "https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Ruta5y10k.png" },
-    { src: "https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Ruta3k.png" },
+    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta3k.png" },
+    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta5k.png" },
+    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta10k.png" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
