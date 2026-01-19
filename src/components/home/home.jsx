@@ -53,17 +53,17 @@ export default function Home() {
         {/* 🔹 Metadatos principales */}
         <meta
           name="description"
-          content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo."
+          content="Únete a la Carrera Farmatodo 2025 en el bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo."
         />
         <meta
           name="keywords"
-          content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2025, Parque Bicentenario, registro Farmatodo, salud y deporte"
+          content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2025, Bosque de Chapultepec, registro Farmatodo, salud y deporte"
         />
         <link rel="canonical" href="https://carreracdmx.farmatodo.com.mx/" />
 
         {/* 🔹 Open Graph para redes sociales */}
         <meta property="og:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
-        <meta property="og:description" content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo. ¡Inscríbete ahora!" />
+        <meta property="og:description" content="Únete a la Carrera Farmatodo 2025 en el Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo. ¡Inscríbete ahora!" />
         <meta property="og:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
         <meta property="og:url" content="https://carreracdmx.farmatodo.com.mx/" />
         <meta property="og:type" content="website" />
@@ -71,7 +71,7 @@ export default function Home() {
         {/* 🔹 Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
-        <meta name="twitter:description" content="Únete a la Carrera Farmatodo 2025 en el Parque Bicentenario de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo." />
+        <meta name="twitter:description" content="Únete a la Carrera Farmatodo 2025 en el Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo." />
         <meta name="twitter:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
 
         <link rel="icon" href="https://gruporfpqa.vteximg.com.br/arquivos/favicon_race.png" />
