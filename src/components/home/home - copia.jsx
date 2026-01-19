@@ -125,8 +125,14 @@ export default function Home() {
         animate={showMain ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.15 }}
       >
-        {isMobile 
-          }
+        {isMobile && (
+          <motion.img
+            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png"
+            initial={{ opacity: 0, y: 8 }}
+            animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="main-logo-mobile-union"
+          />)}
           <motion.img
             src="https://gruporfpqa.vteximg.com.br/arquivos/i_FTyCDSO.png"
             initial={{ opacity: 0, y: 8 }}
@@ -156,7 +162,10 @@ export default function Home() {
               />)}
 
             <div className="nuevoDiv">
-             
+              <div className="Navbar2">
+                {/* Navbar */}
+                {showNavbar && <Navbar/>}              
+              </div>
                 
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
@@ -171,7 +180,6 @@ export default function Home() {
                     className="corremos_todos_mobile"
                   />)}
               </motion.div>
-<<<<<<< HEAD
              
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
@@ -184,37 +192,17 @@ export default function Home() {
                   📍 Primera Sección,
                 </p>              
               </motion.div>
-=======
-              <motion.img
-                src="https://gruporfpqa.vteximg.com.br/arquivos/i_ParqueBi.png"
-                alt="Parque Bicentenario"
-                initial={{ opacity: 0, y: 20 }}
-                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: 0.55 }}
-                className="parque-bi-img"
-              />
-
->>>>>>> 45fdc4d71110548bd05b5d393d4bbca4c2880cfd
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="main-text info-text"
               >
-<<<<<<< HEAD
                 <p className="location">
                   Bosque de Chapultepec, CDMX.
                 </p>
                 <p className="coming-soon">
                   Próximamente más información.
-=======
-
-                <p>
-                  El próximo 9 de noviembre llega a la Ciudad de México la 2ª Carrera Farmatodo.<br />
-                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
-                  quienes buscan un nuevo reto.<br />
-                  ¡Vive la energía del movimiento y disfruta de salud y diversión!
->>>>>>> 45fdc4d71110548bd05b5d393d4bbca4c2880cfd
                 </p>
               </motion.div>
 
@@ -273,24 +261,20 @@ export default function Home() {
           {/* Carrusel de patrocinadores */}
           <div className="footer-sponsors-carousel">
             <div className="sponsors-track">
-              <div className="sponsors-set">
-                {[...Array(13)].map((_, i) => (
-                  <img
-                    key={i}
-                    src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
-                    alt={`Sponsor ${i+1}`}
-                  />
-                ))}
-              </div>
-              <div className="sponsors-set" aria-hidden="true">
-                {[...Array(13)].map((_, i) => (
-                  <img
-                    key={`dup-${i}`}
-                    src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
-                    alt={`Sponsor ${i+1}`}
-                  />
-                ))}
-              </div>
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={i}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
+              {[...Array(13)].map((_, i) => (
+                <img
+                  key={`dup-${i}`}
+                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                  alt={`Sponsor ${i+1}`}
+                />
+              ))}
             </div>
           </div>
         </motion.footer>
