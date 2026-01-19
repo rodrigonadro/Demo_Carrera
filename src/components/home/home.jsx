@@ -77,15 +77,15 @@ export default function Home() {
         <link rel="icon" href="https://gruporfpqa.vteximg.com.br/arquivos/favicon_race.png" />
         <meta name="theme-color" content="#0d3b82" />
       </Helmet>
-
-       <div className="Navbar-principal">
-          {/* Navbar */}
+{/*
+       <div className="Navbar-principal">          
           {showNavbar && <Navbar/>}              
         </div>
+      
       <h1 className="main-title-seo">
         Carrera Farmatodo 2025 – Ciudad de México
       </h1>
-
+*/}
       {/* Intro Animation */}
       {!showMain && (
         <div className="intro">
@@ -125,16 +125,10 @@ export default function Home() {
         animate={showMain ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.15 }}
       >
-        {isMobile && (
+        {isMobile 
+          }
           <motion.img
-            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png"
-            initial={{ opacity: 0, y: 8 }}
-            animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-            transition={{ duration: 0.6, delay: 0.45 }}
-            className="main-logo-mobile-union"
-          />)}
-          <motion.img
-            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_Patrocinadores.png"
+            src="https://gruporfpqa.vteximg.com.br/arquivos/i_FTyCDSO.png"
             initial={{ opacity: 0, y: 8 }}
             animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
             transition={{ duration: 0.6, delay: 0.45 }}
@@ -162,10 +156,7 @@ export default function Home() {
               />)}
 
             <div className="nuevoDiv">
-              <div className="Navbar2">
-                {/* Navbar */}
-                {showNavbar && <Navbar/>}              
-              </div>
+             
                 
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
@@ -180,33 +171,35 @@ export default function Home() {
                     className="corremos_todos_mobile"
                   />)}
               </motion.div>
-              <motion.img
-                src="https://gruporfpqa.vteximg.com.br/arquivos/i_ParqueBi.png"
-                alt="Parque Bicentenario"
-                initial={{ opacity: 0, y: 20 }}
-                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+             
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
                 transition={{ duration: 0.6, delay: 0.55 }}
-                className="parque-bi-img"
-              />
-
+                className="race-place"
+              >
+                <p className="race-date">21 de marzo</p>
+                <p className="race-location">
+                  📍 Primera Sección,
+                </p>              
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="main-text"
+                className="main-text info-text"
               >
-
-                <p>
-                  El próximo 9 de noviembre llega a la Ciudad de México la 2ª Carrera Farmatodo.<br />
-                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
-                  quienes buscan un nuevo reto.<br />
-                  ¡Vive la energía del movimiento y disfruta de salud y diversión!
+                <p className="location">
+                  Bosque de Chapultepec, CDMX.
                 </p>
-                <h3>¡Elige tu distancia!</h3>
+                <p className="coming-soon">
+                  Próximamente más información.
+                </p>
               </motion.div>
+
             </div>
 
-            {/* Botones de distancia */}
+            {/* Botones de distancia
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
@@ -238,16 +231,20 @@ export default function Home() {
                 </div>
               )}
             </motion.div>
+             */}
           </div>
 
         {/* Footer */}
         <motion.footer className="footer" initial={{ opacity: 0, y: 10 }} animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }} transition={{ duration: 0.7, delay: 1 }}>
           <div className="footer-icons">
             <a href="https://www.instagram.com/farmatodo_mexico/" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+              <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_IGC.png" alt="Instagram" />
             </a>
             <a href="https://www.facebook.com/people/Farmatodo/61577322527320/" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+              <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_Fb.png" alt="Facebook" />
+            </a>
+            <a href="https://www.tiktok.com/@farmatodo_mexico" target="_blank" rel="noopener noreferrer">
+              <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_TT.png" alt="Facebook" />
             </a>
           </div>
           <p>Farmatodo_Mexico</p>
@@ -255,20 +252,24 @@ export default function Home() {
           {/* Carrusel de patrocinadores */}
           <div className="footer-sponsors-carousel">
             <div className="sponsors-track">
-              {[...Array(13)].map((_, i) => (
-                <img
-                  key={i}
-                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
-                  alt={`Sponsor ${i+1}`}
-                />
-              ))}
-              {[...Array(13)].map((_, i) => (
-                <img
-                  key={`dup-${i}`}
-                  src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
-                  alt={`Sponsor ${i+1}`}
-                />
-              ))}
+              <div className="sponsors-set">
+                {[...Array(13)].map((_, i) => (
+                  <img
+                    key={i}
+                    src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                    alt={`Sponsor ${i+1}`}
+                  />
+                ))}
+              </div>
+              <div className="sponsors-set" aria-hidden="true">
+                {[...Array(13)].map((_, i) => (
+                  <img
+                    key={`dup-${i}`}
+                    src={`https://rodrigonadro.github.io/turnfolleto/demos/magazine/sponsor${i+1}.png`}
+                    alt={`Sponsor ${i+1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </motion.footer>

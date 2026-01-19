@@ -90,10 +90,10 @@ body.intro-active {
 
 
 .main-powerade {
-  max-width: 300px;
+  max-width: 600px;
   height: auto;
   object-fit: contain;
-  margin-top: 0px;
+  margin-top: 55px;
 }
 
 .main-powerade--mobile {
@@ -134,12 +134,12 @@ body.intro-active {
 
 .main-text h3 {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 .main-text p {
   margin-top: 0.75rem;
-  font-size: 1rem;
+  font-size: 2.15rem;
   line-height: 1.6;
 }
 
@@ -192,8 +192,8 @@ body.intro-active {
 }
 
 .footer-icons img {
-  width: 22px;
-  height: 22px;
+  width: 42px;
+  height: 42px;
 }
 
 .footer p,
@@ -271,29 +271,49 @@ body.intro-active {
   font-weight: 600;
 }
 
-/* Carrusel de patrocinadores */
-.footer-sponsors-carousel {
-  position: flex;
-  overflow: hidden;
-  width: 100%;
-  max-width: 79%; /* ocupar todo el ancho en móvil */
-  margin-top: .5rem;
-  margin-left: 11rem;
-  padding: .5rem;
-  align-items: center;
+  .main-text.date-text p {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+/* Texto inferior (ubicación + aviso) */
+.info-text {
+  margin-top: 0.5rem;
 }
 
-.sponsors-track {
-  display: flex;
-  width: calc(200%);
-  animation: scrollSponsors 20s linear infinite;
+.info-text .location {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.4px;
 }
 
-.sponsors-track img {
-  height: 80px;   /* ajusta el tamaño de los logos */
-  margin: 0 30px;
-  object-fit: contain;
+.info-text .coming-soon {
+  font-size: 1.75rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-top: 0.25rem;
 }
+/* Bloque fecha / lugar */
+.race-place {
+  margin-top: 1.2rem;   /* 👈 antes estaba muy separado */
+  text-align: center;
+}
+
+.race-date {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.race-location {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
 
 .Navbar2{
   display: none;
@@ -303,10 +323,6 @@ body.intro-active {
     display: block;
   }
 
-@keyframes scrollSponsors {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 /* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
   .sponsors-track img {
@@ -347,6 +363,21 @@ body.intro-active {
 
   .nuevoDiv{
     margin-top: -20%;
+  }
+  .race-date {
+    font-size: 1.4rem;
+  }
+
+  .race-location {
+    font-size: 1.05rem;
+  }
+
+  .race-extra {
+    font-size: 0.95rem;
+  }
+
+  .race-place {
+    margin-top: 0.8rem;
   }
 }
 
@@ -408,7 +439,8 @@ body.intro-active {
   .main-powerade--mobile {
     display: block;
     margin: 0 auto 2rem auto; /* 👈 espacio debajo (antes de fondo) */
-    max-width: 100px;
+    margin: 1.5rem auto 0 auto; /* 👈 espacio arriba (después de patrocinadores) */
+    max-width: 300px;
   }
 
   /* Fondo móvil */
@@ -451,6 +483,8 @@ body.intro-active {
   .nuevoDiv{
     margin-top: -15%;
   }
+
+
 }
 /* 🔹 Oculta el H1 con clase .main-title-seo sin afectar el SEO */
 .main-title-seo {
@@ -488,4 +522,104 @@ body.intro-active {
   display: block;
    
 }
+}
+
+/* ===== Ajuste fino de espaciados (Figma-like) ===== */
+
+/* Quita márgenes default y controla todo desde aquí */
+.race-place p,
+.info-text p,
+.main-text p {
+  margin: 0;                 /* <-- clave: elimina el espacio entre líneas */
+}
+
+/* Menos espacio entre logo central y la fecha */
+.race-place {
+  margin-top: 0.35rem;       /* antes: 1.2rem */
+}
+
+/* Fecha */
+.race-date {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.05;         /* más cerrado */
+  margin-bottom: 0.35rem;    /* separación con la siguiente línea */
+}
+
+/* Línea "Primera Sección" */
+.race-location {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0.55rem;    /* separación hacia el siguiente bloque */
+}
+
+/* Bloque inferior: menos separación y lineas cerradas */
+.info-text {
+  margin-top: 0.15rem;       /* antes: 0.5rem */
+}
+
+.info-text .location {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;    /* separación entre las 2 líneas */
+}
+
+.info-text .coming-soon {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* Mobile: cierra aún más (porque el espacio se nota más) */
+@media (max-width: 768px) {
+  .race-place { margin-top: 0.25rem; }
+  .race-date { margin-bottom: 0.25rem; line-height: 1.05; }
+  .race-location { margin-bottom: 0.35rem; line-height: 1.15; }
+  .info-text { margin-top: 0.1rem; }
+  .info-text .location { margin-bottom: 0.25rem; }
+}
+
+@media (min-width: 769px) {
+  .nuevoDiv { margin-top: -3%; }  /* prueba -10% a -5% */
+}
+
+/* ===== Carrusel FINAL (sin cortes) ===== */
+/* ===== Carrusel: forzar estilos correctos y detener/activar movimiento ===== */
+.footer-sponsors-carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  padding: .5rem 25px;     /* ✅ NO 5rem */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;  /* ✅ NO flex-end */
+}
+
+/* Si quieres que NO se mueva, deja animation: none */
+.sponsors-track {
+  display: flex;
+  width: fit-content;
+  will-change: transform;
+  animation: scrollSponsors 20s linear infinite !important;
+}
+
+.sponsors-set {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.sponsors-track img{
+  height: 60px;
+  margin: 0 -12px;   /* prueba -8, -10, -12 */
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+
+@keyframes scrollSponsors {
+  0% { transform: translateX(12px); }
+  100% { transform: translateX(calc(-50% + 12px)); }
 }
