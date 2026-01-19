@@ -522,7 +522,6 @@ body.intro-active {
   display: block;
    
 }
-<<<<<<< HEAD
 }
 
 /* ===== Ajuste fino de espaciados (Figma-like) ===== */
@@ -623,6 +622,4 @@ body.intro-active {
 @keyframes scrollSponsors {
   0% { transform: translateX(12px); }
   100% { transform: translateX(calc(-50% + 12px)); }
-=======
->>>>>>> 45fdc4d71110548bd05b5d393d4bbca4c2880cfd
 }
