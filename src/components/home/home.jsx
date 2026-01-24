@@ -48,44 +48,44 @@ export default function Home() {
       {/* 🧭 SEO & Open Graph Metadata */}
       <Helmet>
         <html lang="es" />
-        <title>Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K</title>
+        <title>Carrera Farmatodo 2026 | CDMX | 3K, 5K y 10K</title>
 
         {/* 🔹 Metadatos principales */}
         <meta
           name="description"
-          content="Únete a la Carrera Farmatodo 2025 en el bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo."
+          content="Únete a la Carrera Farmatodo 2026 en la Primera Sección, Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo."
         />
         <meta
           name="keywords"
-          content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2025, Bosque de Chapultepec, registro Farmatodo, salud y deporte"
+          content="Carrera Farmatodo, 5K, 10K, CDMX, carrera 2026, Primera Sección, Bosque de Chapultepec, registro Farmatodo, salud y deporte"
         />
         <link rel="canonical" href="https://carreracdmx.farmatodo.com.mx/" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
-        <meta property="og:description" content="Únete a la Carrera Farmatodo 2025 en el Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo. ¡Inscríbete ahora!" />
+        <meta property="og:title" content="Carrera Farmatodo 2026 | CDMX | 3K, 5K y 10K" />
+        <meta property="og:description" content="Únete a la Carrera Farmatodo 2026 en Primera Sección, Bosque de Chapultepec de la Ciudad de Mexico, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo. ¡Inscríbete ahora!" />
         <meta property="og:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
         <meta property="og:url" content="https://carreracdmx.farmatodo.com.mx/" />
         <meta property="og:type" content="website" />
 
         {/* 🔹 Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Carrera Farmatodo 2025 | CDMX | 3K, 5K y 10K" />
-        <meta name="twitter:description" content="Únete a la Carrera Farmatodo 2025 en el Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo." />
+        <meta name="twitter:title" content="Carrera Farmatodo 2026 | CDMX | 3K, 5K y 10K" />
+        <meta name="twitter:description" content="Únete a la Carrera Farmatodo 2026 en Primera Sección, Bosque de Chapultepec de Ciudad de México, y desafía tus límites en las modalidades de 3K, 5K o 10K. Corre con todo." />
         <meta name="twitter:image" content="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png" />
 
         <link rel="icon" href="https://gruporfpqa.vteximg.com.br/arquivos/favicon_race.png" />
         <meta name="theme-color" content="#0d3b82" />
       </Helmet>
-{/*
-       <div className="Navbar-principal">          
+
+       <div className="Navbar-principal">
+          {/* Navbar */}
           {showNavbar && <Navbar/>}              
         </div>
-      
       <h1 className="main-title-seo">
-        Carrera Farmatodo 2025 – Ciudad de México
+        Carrera Farmatodo 2026 – Ciudad de México
       </h1>
-*/}
+
       {/* Intro Animation */}
       {!showMain && (
         <div className="intro">
@@ -125,8 +125,14 @@ export default function Home() {
         animate={showMain ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.15 }}
       >
-        {isMobile 
-          }
+        {isMobile && (
+          <motion.img
+            src="https://rodrigonadro.github.io/turnfolleto/demos/magazine/i_logoFTchico.png"
+            initial={{ opacity: 0, y: 8 }}
+            animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="main-logo-mobile-union"
+          />)}
           <motion.img
             src="https://gruporfpqa.vteximg.com.br/arquivos/i_FTyCDSO.png"
             initial={{ opacity: 0, y: 8 }}
@@ -156,7 +162,10 @@ export default function Home() {
               />)}
 
             <div className="nuevoDiv">
-             
+              <div className="Navbar2">
+                {/* Navbar */}
+                {showNavbar && <Navbar/>}              
+              </div>
                 
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
@@ -170,36 +179,29 @@ export default function Home() {
                     alt="Corremos Todos"               
                     className="corremos_todos_mobile"
                   />)}
-              </motion.div>
-             
-              <motion.div
-                initial={{ opacity: 0, y: 8 }}
-                animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-                transition={{ duration: 0.6, delay: 0.55 }}
-                className="race-place"
-              >
-                <p className="race-date">21 de marzo</p>
-                <p className="race-location">
-                  📍 Primera Sección,
-                </p>              
-              </motion.div>
+              </motion.div>          
+
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="main-text info-text"
+                className="main-text"
               >
-                <p className="location">
-                  Bosque de Chapultepec, CDMX.
+                <p className="race-location">
+                  <h1>📍 Primera Sección, </h1>
+                </p>  
+                <p>
+                  El próximo 21 de Marzo llega a la Ciudad de México 2ª Carrera Farmatodo.<br />
+                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
+                  quienes buscan un nuevo reto.<br />
+                  ¡Vive la energía del movimiento y disfruta de salud y diversión!
                 </p>
-                <p className="coming-soon">
-                  Próximamente más información.
-                </p>
+                <h3>¡Elige tu distancia!</h3>
               </motion.div>
 
             </div>
 
-            {/* Botones de distancia
+            {/* Botones de distancia */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
@@ -231,7 +233,6 @@ export default function Home() {
                 </div>
               )}
             </motion.div>
-             */}
           </div>
 
         {/* Footer */}

@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../navbar/navbar";
+import treskm from "../../assets/Images/3km.png";
+import tre510km from "../../assets/Images/510km.png";
+
+
 import './ruta.css';
 
 export default function Ruta() {
@@ -14,9 +18,8 @@ export default function Ruta() {
   }, []);
 
   const slides = [
-    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta3k.png" },
-    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta5k.png" },
-    { src: "https://gruporfpqa.vteximg.com.br/arquivos/i_Ruta10k.png" },
+    { src: treskm},
+    { src: tre510km },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -76,8 +79,7 @@ export default function Ruta() {
       )}
 
       <p className="ruta-text">
-        Av. 5 de Mayo 290, San Lorenzo Tlaltenango, Miguel Hidalgo, 11210 Ciudad de México, CDMX <br />
-Salida y meta: Parque Bicentenario / Explanada Ladrillo
+        Primera Sección, Bosques de Chapultepec, CDMX
       </p>
 
       <a

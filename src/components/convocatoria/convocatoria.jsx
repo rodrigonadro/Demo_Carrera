@@ -24,16 +24,16 @@ export default function Convocatoria() {
         <div className="info-card">
           <div className="info-content">
               <p className="highlight-desk">
-                Fecha: 09 de noviembre de 2025.<br />
+                Fecha: 21 de Marzo de 2026.<br />
                 Hora de salida: 07:00 am.
               </p>
               <p className="title">Inscripciones:</p>
               <p>
-                Del 22 de septiembre al 6 de noviembre
+                Del 15 de Enero al 13 de Marzo.
               </p>
               <p className="title">Salida:</p>
               <p>
-                Parque Bicentenario
+               1ª. Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
               </p>
               <p className="title">Distancia:</p>
                 <ul>
@@ -54,9 +54,9 @@ export default function Convocatoria() {
               <br></br><br />
               <p className="title">Entrega de kit</p>
               <p>
-                08 de noviembre de 2025<br />
-                Horario 09:00 a 15:00 horas<br />
-                Parque Bicentenario Jardín Natura<br />
+                14 de Marzo de 2026<br />
+                Horario 9:30 a 19:00 hrs. horas<br />
+                Fuente Xochipilli, segunda sección Bosque de Chapultepec.<br />
               </p>
                 <br></br><br /> 
                 <b><a href="https://n9.cl/9h2su" target="_blank"><p className="title">Ubicación aquí</p></a></b>
@@ -93,7 +93,7 @@ export default function Convocatoria() {
                 <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
               </div>
             </div>
-            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$1,500.00</span></div>
+            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono lugareño <span >$1,500.00</span></div>
           </div>
         </div>
       )
@@ -126,8 +126,10 @@ export default function Convocatoria() {
                 <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
               </div>
             </div>
-            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$2,000.00</span></div>
+            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono lugareño <span >$5,000.00</span></div>
+               Para reclamar el premio de bono lugareño, debe comprobar al menos 6 meses de residencia en CDMX con su identificación oficial INE
           </div>
+          
         </div>
       )
     },
@@ -226,17 +228,17 @@ export default function Convocatoria() {
             <div className="info-card">
               <div className="info-content">
                 <p className="highlight-desk">
-                  Fecha: 09 de noviembre de 2025.<br />
+                  Fecha: 21 de Marzo de 2026.<br />
                   Hora de salida: 07:00 am.
                 </p>
 
                 <p className="title">Inscripciones:</p>
                 <p>
-                  Del 22 de septiembre al 6 de noviembre
+                  Del 15 de Enero al 13 de Marzo.
                 </p>
                 <p className="title">Salida:</p>
                 <p>
-                  Parque Bicentenario
+                  1ª. Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
                 </p>
                 <p className="title">Distancia:</p>
                 <ul>
@@ -258,11 +260,11 @@ export default function Convocatoria() {
                 <p className="title">Entrega de kit</p>
                 <p>
                   08 de noviembre de 2025<br />
-                  Horario 09:00 a 15:00 horas<br />
-                  Parque Bicentenario Jardín Natura<br />
+                  Horario 09:30 a 19:00 horas<br />
+                  Fuente Xochipilli, segunda sección Bosque de Chapultepec.<br />
                 </p>
                 <br></br><br /> 
-                <b><a href="https://n9.cl/9h2su" target="_blank"><p className="title">Ubicación aquí</p></a></b>
+                <b><a href="https://n9.cl/https://maps.app.goo.gl/CZbWLNiD4Cq2fapB6" target="_blank"><p className="title">Ubicación aquí</p></a></b>
               </div>
             </div>
            <div class="newcontainer">
@@ -293,6 +295,10 @@ export default function Convocatoria() {
                   </div>
                 </div>
                 <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$1,500.00</span></div>
+                  <br></br>Para reclamar el premio del bono lugareño, Debe <br></br>
+                   comprobar al menos 6 meses de residencia en <br></br>                          
+                   CDMX con su identificación oficial INE 
+          
               </div>
             </div>
 
@@ -322,6 +328,9 @@ export default function Convocatoria() {
                   </div>
                 </div>
                 <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$2,000.00</span></div>
+                <br></br>Para reclamar el premio del bono lugareño, Debe <br></br>
+                   comprobar al menos 6 meses de residencia en <br></br>                          
+                   CDMX con su identificación oficial INE 
               </div>
               
             </div>
@@ -330,8 +339,7 @@ export default function Convocatoria() {
                   Notas importantes:                 
         </p>
         <p>
-          Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar: 
-          Correo de confirmación de inscripción, ticket o cédula expedido en el centro de inscripción.
+          Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar:  Correo de confirmación de inscripción, ticket o cédula expedida en el centro de inscripción. 
         </p>
               <ul>
                 <li>Distancia 3 km es recreativa, no aplica premiación.</li>
