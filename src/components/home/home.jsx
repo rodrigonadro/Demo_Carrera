@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Navbar from '../navbar/navbar.jsx';
 import SegundaCarrera from '../../assets/Images/i_FondoCDMXMob.png';
 import CorremosTodos  from '../../assets/Images/i_Slogan.png';
+import Patrocinadores  from '../../assets/Images/Patrocinadores.png';
 import { Helmet } from "react-helmet";
 
 export default function Home() {
@@ -134,7 +135,7 @@ export default function Home() {
             className="main-logo-mobile-union"
           />)}
           <motion.img
-            src="https://gruporfpqa.vteximg.com.br/arquivos/i_FTyCDSO.png"
+            src={Patrocinadores}
             initial={{ opacity: 0, y: 8 }}
             animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
             transition={{ duration: 0.6, delay: 0.45 }}
@@ -188,7 +189,7 @@ export default function Home() {
                 className="main-text"
               >
                 <p className="race-location">
-                  <h1>📍 Primera Sección, </h1>
+                  <h1>📍 Primera Sección, Bosque de Chapultepec, CDMX.  </h1>
                 </p>  
                 <p>
                   El próximo 21 de Marzo llega a la Ciudad de México 2ª Carrera Farmatodo.<br />
@@ -244,8 +245,8 @@ export default function Home() {
             <a href="https://www.facebook.com/people/Farmatodo/61577322527320/" target="_blank" rel="noopener noreferrer">
               <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_Fb.png" alt="Facebook" />
             </a>
-            <a href="https://www.tiktok.com/@farmatodo_mexico" target="_blank" rel="noopener noreferrer">
-              <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_TT.png" alt="Facebook" />
+             <a href="https://www.tiktok.com/@farmatodo_mexico" target="_blank" rel="noopener noreferrer">
+              <img src="https://gruporfpqa.vteximg.com.br/arquivos/i_TT.png" alt="Tiktok" />
             </a>
           </div>
           <p>Farmatodo_Mexico</p>

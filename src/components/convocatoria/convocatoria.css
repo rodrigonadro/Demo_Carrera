@@ -25,11 +25,11 @@
 
 .header-card {
   background: #1B3E76;
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
   border-radius: 10px;
   text-align: center;
   flex: 1;
-  max-width: 262px;
+  max-width: 294px;
 }
 
 .header-card--highlight {
@@ -93,7 +93,7 @@
 }
 .convocatoria-sections-container {
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -188,6 +188,12 @@
 
 .title {
   color: #3CB49E;
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.letra {
+  color: #0d0e0d;
   margin-top: 1rem;
   margin: 0;
 }
@@ -534,6 +540,9 @@
   height: 80px;   /* ajusta el tamaño de los logos */
   margin: 0 30px;
   object-fit: contain;
+}
+.centrado{
+  text-align: center;
 }
 
 @keyframes scrollSponsors {

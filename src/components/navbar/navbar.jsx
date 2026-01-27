@@ -1,10 +1,13 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"  // 👈 Import necesario para rutas internas
+import { Link, useLocation  } from "react-router-dom"  // 👈 Import necesario para rutas internas
+import Logo from '../../assets/Images/Logo.png';
 import './navbar.css'
 
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === "/"
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768)
@@ -36,6 +39,7 @@ export default function Navbar() {
         {/* Links de navegación */}
         <div className={`navbar-right ${isMobile ? "navbar-right-mobile" : ""}`}>
           {/* Icono de home siempre visible */}
+          {isMobile && (
           <Link to="/" className="home-link mobile">
             <img
               src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
@@ -43,9 +47,26 @@ export default function Navbar() {
               className="icon-home"
             />
           </Link>
+           )}
+  
 
           {/* Links de navegación interna */}
           <nav className={`nav-menu ${isMobile ? "navbar-links-mobile" : ""}`}>
+             {!isHome && (
+                <img
+                  src={Logo}
+                  alt="home"
+                  className="icon-home"
+                />
+            )}
+              <Link to="/" className="home-link only-home">
+                <img
+                  src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
+                  alt="home"
+                  className="icon-home"
+                />
+              </Link>
+     
             <Link to="/convocatoria">Convocatoria</Link>
             <Link to="/ruta">Nuestras rutas</Link>
           </nav>

@@ -71,8 +71,8 @@
 }
 
 /* posicionamiento según lado */
-.carousel-btn.right { right: -52px; }
-.carousel-btn.left  { left: -52px; }
+.carousel-btn.right { right: -75px; }
+.carousel-btn.left  { left: -75px; }
 
 /* Hover / active */
 .carousel-btn:hover {

@@ -238,8 +238,12 @@ export default function Convocatoria() {
                 </p>
                 <p className="title">Salida:</p>
                 <p>
-                  1ª. Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
+                  1ª. Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida.
                 </p>
+
+                <br></br>
+                <b><a href="https://maps.app.goo.gl/1KaWBDuDKEPa3KRf9" target="_blank"><p className="title">Ubicación aquí</p></a></b>
+                <br></br>
                 <p className="title">Distancia:</p>
                 <ul>
                   <li>Distancia 3 km. Recreativa </li><b>Categoría única general</b>
@@ -256,15 +260,15 @@ export default function Convocatoria() {
                 </ul>
                 
                 <p className="title">*Aplican restricciones con fundamento médico</p>
-                <br></br><br />
+                <br></br>
                 <p className="title">Entrega de kit</p>
                 <p>
-                  08 de noviembre de 2025<br />
+                  14 de Marzo de 2026<br />
                   Horario 09:30 a 19:00 horas<br />
-                  Fuente Xochipilli, segunda sección Bosque de Chapultepec.<br />
+                  <b>Fuente Xochipilli, segunda sección Bosque de Chapultepec.</b>
                 </p>
-                <br></br><br /> 
-                <b><a href="https://n9.cl/https://maps.app.goo.gl/CZbWLNiD4Cq2fapB6" target="_blank"><p className="title">Ubicación aquí</p></a></b>
+                <br></br>
+                <b><a href="https://maps.app.goo.gl/y2PZ9GpnqmQj3ayk9" target="_blank"><p className="title">Ubicación aquí</p></a></b>
               </div>
             </div>
            <div class="newcontainer">
@@ -295,9 +299,9 @@ export default function Convocatoria() {
                   </div>
                 </div>
                 <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$1,500.00</span></div>
-                  <br></br>Para reclamar el premio del bono lugareño, Debe <br></br>
+                 <div className="centrado"> <h6>Para reclamar el premio del bono lugareño, Debe <br></br>
                    comprobar al menos 6 meses de residencia en <br></br>                          
-                   CDMX con su identificación oficial INE 
+                   CDMX con su identificación oficial INE. </h6></div>
           
               </div>
             </div>
@@ -328,9 +332,9 @@ export default function Convocatoria() {
                   </div>
                 </div>
                 <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono primeros lugares <span >$2,000.00</span></div>
-                <br></br>Para reclamar el premio del bono lugareño, Debe <br></br>
+                  <div className="centrado"> <h6>Para reclamar el premio del bono lugareño, Debe <br></br>
                    comprobar al menos 6 meses de residencia en <br></br>                          
-                   CDMX con su identificación oficial INE 
+                   CDMX con su identificación oficial INE. </h6></div>
               </div>
               
             </div>
@@ -339,11 +343,11 @@ export default function Convocatoria() {
                   Notas importantes:                 
         </p>
         <p>
-          Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar:  Correo de confirmación de inscripción, ticket o cédula expedida en el centro de inscripción. 
+          Para recoger tu número, es obligatorio que acuda el titular de la inscripción y presentar: 
+          Correo de confirmación de inscripción, ticket o cédula expedido en el centro de inscripción.
         </p>
               <ul>
                 <li>Distancia 3 km es recreativa, no aplica premiación.</li>
-                <li>No habrá duplicidad de premios.</li>
                 <li>El pago de premiación será con cheque no aplica impuesto.</li>
                 <li>La vigencia para recoger tu premio es 15 días hábiles después del evento.</li>
                 <li>Es obligatorio presentar identificación Oficial en ORIGINAL, para reclamo de premiación.</li>
