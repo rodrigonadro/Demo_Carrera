@@ -92,11 +92,16 @@
  
 }
 .convocatoria-sections-container {
-  display: flex;
+  /*display: flex;
   gap: 6rem;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 /* Botón Inscribirme */
