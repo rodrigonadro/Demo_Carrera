@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Link, useLocation  } from "react-router-dom"  // 👈 Import necesario para rutas internas
 import Logo from '../../assets/Images/Logo.png';
+import Logo2 from '../../assets/Images/PatrocinadoresM.png';
 import './navbar.css'
 
 export default function Navbar() {
@@ -38,40 +39,54 @@ export default function Navbar() {
 
         {/* Links de navegación */}
         <div className={`navbar-right ${isMobile ? "navbar-right-mobile" : ""}`}>
-          {isMobile && (
-          <Link to="/" className="home-link mobile">
-            <img
-              src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
-              alt="home"
-              className="icon-home"
-            />
-          </Link>
-           )}
+          
   
 
           {/* Links de navegación interna */}
           <nav className={`nav-menu ${isMobile ? "navbar-links-mobile" : ""}`}>
-             {!isHome && (
+
+          {isMobile && (
+            <>
+              <Link to="/" className="home-link mobile">
                 <img
-                  src={Logo}
+                  src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
                   alt="home"
-                  className="icon-home-imgg"
+                  className="icon-home"
+                />
+              </Link>
+               {(!isHome && isMobile) && (
+                <img
+                  src={Logo2}
+                  alt="Patrocinadores"
+                className="logo-sponsors logo-sponsors-mobile"
                 />
               )}
+             
+            </>
+          )}
 
-              {!isMobile && (
-                <Link to="/" className="home-link only-home">
-                  <img
-                    src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
-                    alt="home"
-                    className="icon-home"
-                  />
-                </Link>
-              )}
-    
-            <Link className="ruta" to="/convocatoria">Convocatoria</Link>
-            <Link className="ruta" to="/ruta">Nuestras rutas</Link>
-          </nav>
+          {/* DESKTOP (NO TOCAR) */}
+          {(!isHome && !isMobile) && (
+            <img
+              src={Logo}
+              alt="home"
+              className="icon-home-imgg"
+            />
+          )}
+
+          {!isMobile && (
+            <Link to="/" className="home-link only-home">
+              <img
+                src="https://gruporfpqa.vteximg.com.br/arquivos/home_landing.png"
+                alt="home"
+                className="icon-home"
+              />
+            </Link>
+          )}
+
+          <Link className="ruta" to="/convocatoria">Convocatoria</Link>
+          <Link className="ruta" to="/ruta">Nuestras rutas</Link>
+        </nav>
         </div>
       </div>
     </motion.header>
