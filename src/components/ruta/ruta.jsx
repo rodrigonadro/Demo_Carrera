@@ -79,7 +79,8 @@ export default function Ruta() {
       )}
 
       <p className="ruta-text">
-        Primera Sección, Bosques de Chapultepec, CDMX
+        Salida y meta:
+        1a Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
       </p>
 
       <a

@@ -6,6 +6,7 @@ import Navbar from '../navbar/navbar.jsx';
 import SegundaCarrera from '../../assets/Images/i_FondoCDMXMob.png';
 import CorremosTodos  from '../../assets/Images/i_Slogan.png';
 import Patrocinadores  from '../../assets/Images/Patrocinadores.png';
+import PatrocinadoresM  from '../../assets/Images/PatrocinadoresM.png';
 import { Helmet } from "react-helmet";
 
 export default function Home() {
@@ -134,13 +135,23 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.45 }}
             className="main-logo-mobile-union"
           />)}
+          {isMobile && (
+          <motion.img
+            src={PatrocinadoresM}
+            initial={{ opacity: 0, y: 8 }}
+            animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className={`main-powerade ${isMobile ? "main-powerade--mobile" : "main-powerade--desktop"}`}
+          />)}
+          {!isMobile && (
           <motion.img
             src={Patrocinadores}
             initial={{ opacity: 0, y: 8 }}
             animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
             transition={{ duration: 0.6, delay: 0.45 }}
             className={`main-powerade ${isMobile ? "main-powerade--mobile" : "main-powerade--desktop"}`}
-          />
+          />)}
+          
 
           <div className="main-inner">
             {isMobile && (

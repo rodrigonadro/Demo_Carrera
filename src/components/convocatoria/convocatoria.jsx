@@ -35,6 +35,7 @@ export default function Convocatoria() {
               <p>
                1ª. Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
               </p>
+               <b><a href="https://maps.app.goo.gl/sE6EC3aLoC3EmYnN6" target="_blank"><p className="title">Ubicación aquí</p></a></b>
               <p className="title">Distancia:</p>
                 <ul>
                   <li>Distancia 3 km. Recreativa </li><b>Categoría única general</b>
@@ -59,7 +60,7 @@ export default function Convocatoria() {
                 Fuente Xochipilli, segunda sección Bosque de Chapultepec.<br />
               </p>
                 <br></br><br /> 
-                <b><a href="https://n9.cl/9h2su" target="_blank"><p className="title">Ubicación aquí</p></a></b>
+                <b><a href="https://maps.app.goo.gl/y2PZ9GpnqmQj3ayk9" target="_blank"><p className="title">Ubicación aquí</p></a></b>
           </div>
         </div>
       )
@@ -126,7 +127,7 @@ export default function Convocatoria() {
                 <div className="premios-box" style={{ color: "#FFFFFF" }}>$1,000.00</div>
               </div>
             </div>
-            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono lugareño <span >$5,000.00</span></div>
+            <div className="bonus-box" style={{ color: "#FFFFFF" }}>Bono lugareño <span >$2,000.00</span></div>
                Para reclamar el premio de bono lugareño, debe comprobar al menos 6 meses de residencia en CDMX con su identificación oficial INE
           </div>
           
@@ -148,8 +149,7 @@ export default function Convocatoria() {
               Correo de confirmación de inscripción, ticket o cédula expedido en el centro de inscripción.
             </p>
                   <ul>
-                    <li>Distancia 3 km es recreativa, no aplica premiación.</li>
-                    <li>No habrá duplicidad de premios.</li>
+                    <li>Distancia 3 km es recreativa, no aplica premiación.</li>                    
                     <li>El pago de premiación será con cheque no aplica impuesto.</li>
                     <li>La vigencia para recoger tu premio es 15 días hábiles después del evento.</li>
                     <li>Es obligatorio presentar identificación Oficial en ORIGINAL, para reclamo de premiación.</li>
@@ -242,7 +242,7 @@ export default function Convocatoria() {
                 </p>
 
                 <br></br>
-                <b><a href="https://maps.app.goo.gl/1KaWBDuDKEPa3KRf9" target="_blank"><p className="title">Ubicación aquí</p></a></b>
+                <b><a href="https://maps.app.goo.gl/sE6EC3aLoC3EmYnN6" target="_blank"><p className="title">Ubicación aquí</p></a></b>
                 <br></br>
                 <p className="title">Distancia:</p>
                 <ul>

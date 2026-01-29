@@ -149,8 +149,7 @@ body.intro-active {
 /* ---------------- BOTONES ---------------- */
 .race-buttons {
   display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1.0rem;
 }
 
 .race-button {
@@ -216,7 +215,6 @@ body.intro-active {
 
 /* ---------- Detalle de tarjeta al elegir distancia ---------- */
 .race-section {
-  margin-top: 2rem;
   text-align: center;
 }
 
