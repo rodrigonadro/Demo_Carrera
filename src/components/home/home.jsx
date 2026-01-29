@@ -200,11 +200,12 @@ export default function Home() {
                 className="main-text"
               >
                 <p className="race-location">
-                  <h1>📍 Primera Sección, Bosque de Chapultepec, CDMX.  </h1>
-                </p>  
-                <p>
-                  El próximo 21 de Marzo llega a la Ciudad de México 2ª Carrera Farmatodo.<br />
-                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta 
+                  📍 Primera Sección, Bosque de Chapultepec, CDMX.
+                </p>
+
+                <p className="race-description">
+                  El próximo 21 de marzo llega a la Ciudad de México 2ª Carrera Farmatodo.<br />
+                  Un encuentro deportivo abierto para todos, desde corredores experimentados, hasta
                   quienes buscan un nuevo reto.<br />
                   ¡Vive la energía del movimiento y disfruta de salud y diversión!
                 </p>

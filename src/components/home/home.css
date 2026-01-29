@@ -462,19 +462,25 @@ body.intro-active {
   /* Imagen de patrocinadores */
   .main-powerade--mobile {
     display: block;
-    margin: 0 auto 2rem auto; /* 👈 espacio debajo (antes de fondo) */
-    max-width: 100px;
+    margin: 0 auto 0rem auto; /* 👈 espacio debajo (antes de fondo) */
+    max-width: 150px;
+    margin-top: 3%;
   }
 
   /* Fondo móvil */
   .main-logo-mobile-union {
     display: block;
-    max-width: 170px;   /* ajusta según se vea mejor (ej. 120px–150px) */
+    max-width: 120px;   /* ajusta según se vea mejor (ej. 120px–150px) */
     margin: 1.5rem auto 0 auto; /* 👈 espacio arriba (después de patrocinadores) */
+    margin-top: -5%;
   }
-
+.race-location {    
+    max-width: auto;   /* ajusta según se vea mejor (ej. 120px–150px) */
+        
+  }
   .Navbar2{
     display: block;
+    margin-top: -10%;
   }
 
   .Navbar-principal .navbar-inner{
@@ -600,7 +606,7 @@ body.intro-active {
 @media (max-width: 768px) {
   .race-place { margin-top: 0.25rem; }
   .race-date { margin-bottom: 0.25rem; line-height: 1.05; }
-  .race-location { margin-bottom: 0.35rem; line-height: 1.15; }
+  .race-location { margin-bottom: 0.35rem; line-height: 1.15;  }
   .info-text { margin-top: 0.1rem; }
   .info-text .location { margin-bottom: 0.25rem; }
 }
@@ -645,4 +651,36 @@ body.intro-active {
 @keyframes scrollSponsors {
   0% { transform: translateX(12px); }
   100% { transform: translateX(calc(-50% + 12px)); }
+}
+
+/* ===== Mobile typography (FORZADO al final) ===== */
+@media (max-width: 768px) {
+  .main-text .race-location{
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    line-height: 1.55 !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .main-text .race-description{
+    font-size: 0.90rem !important;
+    font-weight: 400 !important;  /* delgado */
+    line-height: 1.35 !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .main-text h3{
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    margin-top: 0.6rem !important;
+  }
+  .race-location{
+  font-weight: 700; /* negrita */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .main-text .race-location{ font-size: 0.98rem !important; }
+  .main-text .race-description{ font-size: 0.86rem !important; }
 }
