@@ -8,19 +8,7 @@ import './navbar.css'
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false)
   const location = useLocation()
-
-  const isMarketingHash =
-    (location.hash || "").startsWith("#msdynmkt_") ||
-    (location.hash || "").includes("msdynmkt_trackingcontext")
-
-  const isHome =
-    location.pathname === "/" &&
-    (
-      location.hash === "" ||
-      location.hash === "#/" ||         // por si usas HashRouter
-      isMarketingHash                   // hash de marketing -> sigue siendo home
-    )
-
+  const isHome = location.pathname === "/"
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768)
