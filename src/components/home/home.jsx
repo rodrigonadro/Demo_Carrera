@@ -209,12 +209,12 @@ export default function Home() {
                   quienes buscan un nuevo reto.<br />
                   ¡Vive la energía del movimiento y disfruta de salud y diversión!
                 </p>
-                <h3>¡Elige tu distancia!</h3>
+                 {/* <h3>¡Elige tu distancia!</h3>*/}
               </motion.div>
 
             </div>
 
-            {/* Botones de distancia */}
+            {/* Botones de distancia 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={showMain ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
@@ -246,6 +246,7 @@ export default function Home() {
                 </div>
               )}
             </motion.div>
+            */}
           </div>
 
         {/* Footer */}

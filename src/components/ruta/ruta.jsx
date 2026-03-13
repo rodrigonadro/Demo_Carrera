@@ -83,14 +83,7 @@ export default function Ruta() {
         1a Sección del Bosque de Chapultepec Calzada del Rey y La Gran Avenida
       </p>
 
-      <a
-        href="https://www.farmatodo.com.mx/registro-carrera"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-inscribirme"
-      >
-        Inscribirme
-      </a>
+      
 
       {!isMobile && (<div className="footer-sponsors-carousel">
             <div className="sponsors-track">

@@ -190,29 +190,9 @@ export default function Convocatoria() {
             <button className="carousel-btn right" onClick={goNext}></button>
           )}
         </div>
-        <div className="inscribirme-container-mob">
-          <a
-            href="https://www.farmatodo.com.mx/registro-carrera"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inscribirme-btn-mob"
-          >
-            Inscribirme
-          </a>
-        </div>
+        
       </div>) : (<div>
-        {/* Botón Inscribirme */}
-        <div className="inscribirme-container">
-          <a
-            href="https://www.farmatodo.com.mx/registro-carrera"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inscribirme-btn"
-          >
-            Inscribirme
-          </a>
-        </div>
-
+        
         <div className="convocatoria-main-content">
           <div className="convocatoria-header-section">
             <div className="header-card">
